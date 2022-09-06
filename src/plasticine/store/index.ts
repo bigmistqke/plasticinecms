@@ -1,11 +1,12 @@
 import { createEffect, createMemo } from 'solid-js'
 import { createStore } from 'solid-js/store'
-import { field, RegisteredFieldData } from '../components/types'
+import { RegisteredFieldData } from '../components/types'
 import fals from 'fals'
 
 const [store, setStore] = createStore<any>({})
 const [types, setTypes] = createStore({})
 
+// can not pass path straight away because then it will lose reactivity
 export const useStore: any = (props = { path: [] }) => {
 	return {
 		state: createMemo(() => getStateFromPath(props.path)),

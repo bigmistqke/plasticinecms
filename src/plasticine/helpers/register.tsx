@@ -1,5 +1,7 @@
+import { JSXElement } from 'solid-js'
 import { JSX } from 'solid-js/jsx-runtime'
 import { LabeledInputProps } from '../components/Inputs'
+import { ConfigProps } from '../components/types'
 
 const defaultValues = (key: string) => {
 	const valuePairs: { [key: string]: any } = {
@@ -12,19 +14,17 @@ const defaultValues = (key: string) => {
 	return valuePairs[key]
 }
 
-interface RegisterProps extends LabeledInputProps {
-	component: boolean
-}
-
 export const register = (
-	component: (props: LabeledInputProps) => JSX.Element,
+	component: (props: ConfigProps) => JSXElement,
 	returnType: string,
 	defaultValue?: any
-) => {
-	console.log(component)
-
-	return (props: any) => {
+): ((props: ConfigProps) => JSXElement) => {
+	return (props: ConfigProps) => {
+		// this is the path it follows when using the component inside another component
 		if (props.component) return component(props)
+		// this is the path it follows during the configuration
+		// we pass the component which will later be wrapped inside a Dynamic
+		// and pass any metadata concerning the
 		return {
 			returnType,
 			defaultValue: defaultValue || defaultValues(returnType),

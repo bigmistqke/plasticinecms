@@ -1,6 +1,6 @@
-import { Component, JSXElement } from 'solid-js'
+import { JSXElement } from 'solid-js'
 
-export default (props) => (
+export default (props: { id: string; label: string; children: JSXElement }) => (
 	<div class="flex">
 		<label class="w-32 text-sm p-1" for={props.id}>
 			{props.label}
