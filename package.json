@@ -1,32 +1,39 @@
 {
-  "name": "vite-template-solid",
-  "version": "0.0.0",
-  "description": "",
-  "scripts": {
-    "start": "concurrently \"vite\" \"nodemon server\"",
-    "dev": "pnpm run start",
-    "build": "vite build",
-    "serve": "vite preview"
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "autoprefixer": "^10.4.8",
-    "concurrently": "^7.3.0",
-    "postcss": "^8.4.16",
-    "tailwindcss": "^3.1.8",
-    "typescript": "^4.8.2",
-    "vite": "^3.0.9",
-    "vite-plugin-solid": "^2.3.0"
-  },
-  "dependencies": {
-    "body-parser": "^1.20.0",
-    "cors": "^2.8.5",
-    "express": "^4.18.1",
-    "express-fileupload": "^1.4.0",
-    "fals": "^1.0.3",
-    "morgan": "^1.10.0",
-    "solid-icons": "^1.0.1",
-    "solid-js": "^1.5.1",
-    "zod": "^3.18.0"
-  }
+	"name": "vite-template-solid",
+	"version": "0.0.0",
+	"description": "",
+	"scripts": {
+		"start": "concurrently \"vite\" \"nodemon server\"",
+		"dev": "pnpm run start",
+		"build": "vite build",
+		"serve": "vite preview",
+		"postinstall": "patch-package"
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"autoprefixer": "^10.4.8",
+		"concurrently": "^7.3.0",
+		"postcss": "^8.4.16",
+		"tailwindcss": "^3.1.8",
+		"typescript": "^4.8.2",
+		"vite": "^3.0.9",
+		"vite-plugin-solid": "^2.3.0"
+	},
+	"dependencies": {
+		"body-parser": "^1.20.0",
+		"cors": "^2.8.5",
+		"express": "^4.18.1",
+		"express-fileupload": "^1.4.0",
+		"fals": "^1.0.3",
+		"morgan": "^1.10.0",
+		"patch-package": "^6.4.7",
+		"solid-icons": "^1.0.1",
+		"solid-js": "^1.5.4",
+		"zod": "^3.18.0"
+	},
+	"pnpm": {
+		"patchedDependencies": {
+			"solid-js@1.5.4": "patches/solid-js@1.5.4.patch"
+		}
+	}
 }
