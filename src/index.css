@@ -3,48 +3,44 @@
 @tailwind utilities;
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+		'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 #root {
-  height: 100vh;
+	height: 100vh;
 }
 
-
 * {
-  /* Foreground, Background */
-  scrollbar-color: rgb(226 232 240) white;
-  scrollbar-width: thin;
+	/* Foreground, Background */
+	scrollbar-color: rgb(226 232 240) white;
+	scrollbar-width: thin;
 }
 
 *::-webkit-scrollbar {
-  width: 10px;
-  /* Mostly for vertical scrollbars */
-  height: 10px;
-  /* Mostly for horizontal scrollbars */
+	width: 10px;
+	/* Mostly for vertical scrollbars */
+	height: 10px;
+	/* Mostly for horizontal scrollbars */
 }
 
 *::-webkit-scrollbar-thumb {
-  /* Foreground */
-  background: rgb(226 232 240);
+	/* Foreground */
+	background: rgb(226 232 240);
 }
 
 *::-webkit-scrollbar-track {
-  /* Background */
-  background: white;
+	/* Background */
+	background: white;
 }
 
 ::selection {
-  background: rgb(226 232 240);
-
+	background: rgb(226 232 240);
 }

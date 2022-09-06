@@ -1,16 +1,13 @@
-import ComposedWrapper from "../custom/ComposedWrapper"
-import SimpleWrapper from "../custom/SimpleWrapper"
-import Uploads from "../custom/Uploads"
-import { Text, Repeater, Textarea, Config } from "../plasticine"
+import ComposedWrapper from '../custom/ComposedWrapper'
+import SimpleWrapper from '../custom/SimpleWrapper'
+import Upload from '../custom/Upload'
+import Uploads from '../custom/Uploads'
+import { Text, Config } from '../plasticine'
 
 export default (
-    <Config
-        useAsTitle="simple wrapper"
-    >
-        <Uploads
-            label="uploads"
-        />
-        {/* <SimpleWrapper
+	<Config useAsTitle="simple wrapper">
+		<Text test="ok" />
+		{/* <SimpleWrapper
             label="simple wrapper"
             placeholder="this custom wrapper CAPS LOCKS everything"
             validate={(value: any) => {
@@ -40,6 +37,5 @@ export default (
                 }}
             />
         </Repeater> */}
-    </Config>
+	</Config>
 )
-

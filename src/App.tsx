@@ -1,10 +1,10 @@
-import type { Component } from 'solid-js';
+import type { Component } from 'solid-js'
 
-import Project from './collections/Project';
-import About from './collections/About';
+import Project from './collections/Project'
+import About from './collections/About'
 
-import { CMS } from "./plasticine"
+import { CMS } from './plasticine'
 
-const App: Component = () => <CMS collections={{ About, /* Project */ }} />
+const App: Component = () => <CMS collections={{ About }} />
 
-export default App;
+export default App

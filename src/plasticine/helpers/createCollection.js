@@ -1,9 +1,7 @@
-import { createStore } from "solid-js/store"
+import { createStore } from 'solid-js/store'
 
 export default (fields) => {
-    const [store, setStore] = createStore();
+	const [store, setStore] = createStore()
 
-
-
-    return [store, setStore];
+	return [store, setStore]
 }

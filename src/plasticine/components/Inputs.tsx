@@ -1,57 +1,58 @@
-import { Component, createEffect, createUniqueId, onMount, Show } from "solid-js";
-import { register } from "../helpers/register";
-import { inputProps } from "./types";
+import { Component, createUniqueId, JSX, JSXElement, Show } from 'solid-js'
+import { register } from '../helpers/register'
+import { ContainerWithLabel } from './ContainerWithLabel'
 
-const inputStyle = "rounded-lg border-2 p-1 pl-3 w-full outline-none text-slate-700"
+export interface InputProps {
+	type: string
+	placeholder?: string
+	onfocus?: () => void
+	onload?: () => void
+	onchange?: (value: any) => void
+	oninput?: (value: any) => void
+	value?: any
+	error?: string
+}
 
-const ErrorMessage: Component<{ error: string }> = (props) =>
-    <Show when={props.error}>
-        <span class="ml-2 text-sm text-red-500">{props.error}</span>
-    </Show>
+export interface LabeledInputProps extends InputProps {
+	label: string
+}
 
-const Input: Component<inputProps> = (props) => ((id = createUniqueId()) => {
-    const Element = (p: any) => props.type === 'textarea' ? <textarea {...p} /> : <input type={props.type} {...p} />
+interface ElementProps extends InputProps {
+	class: string
+	id: string
+	title: string
+}
 
-    return <>
-        <div class="flex">
-            <label class="w-32 text-sm p-1" for={id}>{props.label}</label>
-            <div class="flex-1">
-                <Element
-                    id={id}
-                    class={`${props.error ? "border-red-500" : "border-white"} ${inputStyle} `}
-                    title={props.error || ""}
+const Input: Component<LabeledInputProps> = (props) => {
+	const Element = (props: ElementProps) =>
+		props.type === 'textarea' ? <textarea {...props} /> : <input {...props} />
 
-                    value={props.value || null}
-                    placeholder={props.placeholder}
+	const ErrorMessage: Component<{ error: string | undefined }> = (props) => (
+		<Show when={props.error}>
+			<span class="ml-2 text-sm text-red-500">{props.error}</span>
+		</Show>
+	)
 
-                    onfocus={props.onfocus}
-                    onchange={props.onchange}
-                    oninput={(e: { target: { value: any } }) => props.oninput(e.target.value)}
-                />
-                <ErrorMessage error={props.error} />
-            </div>
-        </div>
-    </>
-})()
+	const inputStyle = 'rounded-lg border-2 p-1 pl-3 w-full outline-none text-slate-700'
+	const id = createUniqueId()
 
-export const Number = register((props: any) =>
-    <Input
-        {...props}
-        type="text"
-    />,
-    "number"
-);
-export const Text = register((props: any) =>
-    <Input
-        {...props}
-        type="text"
-    />,
-    "string"
-);
-export const Textarea = register((props: any) =>
-    <Input
-        {...props}
-        type="textarea"
-    />,
-    "string"
-);
+	return (
+		<ContainerWithLabel label={props.label} id={id}>
+			<Element
+				id={id}
+				class={`${props.error ? 'border-red-500' : 'border-white'} ${inputStyle} `}
+				type={props.type}
+				title={props.error || ''}
+				value={props.value || null}
+				placeholder={props.placeholder}
+				onfocus={props.onfocus}
+				onchange={props.onchange}
+				oninput={(e: { target: { value: any } }) => (props.oninput ? props.oninput(e.target.value) : null)}
+			/>
+		</ContainerWithLabel>
+	)
+}
+
+export const Number = register((props: LabeledInputProps) => <Input {...props} type="text" />, 'number', 0)
+export const Text = register((props: any) => <Input {...props} type="text" />, 'string')
+export const Textarea = register((props: any) => <Input {...props} type="textarea" />, 'string')

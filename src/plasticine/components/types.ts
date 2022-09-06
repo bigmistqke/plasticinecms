@@ -1,36 +1,21 @@
-import { JSX } from "solid-js/jsx-runtime"
-
-export interface inputProps {
-    label,
-    type?,
-    placeholder?,
-    onfocus?,
-    onload?,
-    onchange?,
-    oninput?,
-    value?,
-    error?
+export interface TabData {
+	amount: number
+	selectedIndex: number
 }
 
-
-export interface tabState {
-    amount: number,
-    selectedIndex: number
+export interface RegisteredFieldData {
+	type: Function
+	label: string
+	oninput?: Function
+	validate?: Function
+	children?: RegisteredFieldData[]
+	defaultValue: any
+	component: boolean
 }
 
-export interface fieldData {
-    type: Function,
-    label: string,
-    oninput?: Function,
-    validate?: Function,
-    children?: fieldData[],
-    defaultValue: any
-}
-
-export interface field {
-    data: fieldData,
-    path: (string | number)[],
-}
-export interface fieldComponent extends field {
-    tabState?: tabState,
+export interface ProgressData {
+	alpha?: number
+	total?: number
+	loaded?: number
+	message?: string
 }

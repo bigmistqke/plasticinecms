@@ -1,57 +1,48 @@
-import { Component, createEffect, createSignal } from "solid-js"
-import { Dynamic } from "solid-js/web"
+import { Component, createEffect, createSignal } from 'solid-js'
+import { Dynamic } from 'solid-js/web'
 
-import { useStore } from "../store"
+import { useStore } from '../store'
 
-import { fieldComponent } from "./types"
+import { RegisteredFieldData, TabData } from './types'
 
-const Field: Component<fieldComponent> = (props) => {
-    let { state, setState } = useStore(props);
+const Field: Component<{ data: RegisteredFieldData; tabData?: TabData; path: (string | number)[] }> = (props) => {
+	let { state, setState } = useStore(props)
 
-    let [error, setError] = createSignal(false);
+	let [error, setError] = createSignal(false)
 
-    createEffect(() => {
-        if (typeof state() === 'undefined') {
-            // setState(props.data.defaultValue)
-        }
-    })
+	const oninput = (value: any) => {
+		if (props.data.oninput) value = props.data.oninput(value)
 
-    const oninput = (value: any) => {
+		setState(value)
 
-        if (props.data.oninput)
-            value = props.data.oninput(value)
+		if (!props.data.validate) {
+			setError(false)
+			return
+		}
 
-        setState(value);
+		const result = props.data.validate(value)
 
-        if (!props.data.validate) {
-            setError(false);
-            return;
-        }
+		if ((typeof result === 'object' && result.success) || (typeof result === 'boolean' && result)) {
+			setError(false)
+			return
+		}
 
-        const result = props.data.validate(value);
+		setError(result.error || true)
 
-        if (
-            (typeof result === "object" && result.success) ||
-            (typeof result === "boolean" && result)
-        ) {
-            setError(false);
-            return;
-        }
+		return false
+	}
 
-        setError(result.error || true);
-
-        return false;
-    }
-
-    return <Dynamic
-        {...props.data}
-        path={props.path}
-        component={props.data.type}
-        data={props.data}
-        error={error()}
-        value={state()}
-        oninput={oninput}
-    />
+	return (
+		<Dynamic
+			{...props.data}
+			path={props.path}
+			component={props.data.type}
+			data={props.data}
+			error={error()}
+			value={state()}
+			oninput={oninput}
+		/>
+	)
 }
 
 export default Field
