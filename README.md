@@ -6,7 +6,7 @@
 
 ![alt text](https://github.com/bigmistqke/plasticinecms/blob/master/readme/config.JPG)
 
-##   generating UI
+##   generating clean and minimal UI
 
 ![alt text](https://github.com/bigmistqke/plasticinecms/blob/master/readme/interface.jpg?raw=true)
 
