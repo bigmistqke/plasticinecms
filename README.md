@@ -2,23 +2,23 @@
 
 # _plasticine_, a flexible headless cms
 
--   write schemas as JSX-components
+##   write schemas as JSX-components
 
 ![alt text](https://github.com/bigmistqke/plasticinecms/blob/master/readme/config.JPG)
 
--   generating UI
+##   generating clean and minimal UI
 
 ![alt text](https://github.com/bigmistqke/plasticinecms/blob/master/readme/interface.jpg?raw=true)
 
--   for data to be entered
+##   for data to be entered
 
-![alt text](https://github.com/bigmistqke/plasticinecms/blob/master/readme/interface-filled.jpg?raw=true)
+![alt text](https://github.com/bigmistqke/plasticinecms/blob/master/readme/interface-filled.JPG?raw=true)
 
--   easily validate input
+##   easily validate input
 
-![alt text](https://github.com/bigmistqke/plasticinecms/blob/master/readme/validate.jpg?raw=true)
+![alt text](https://github.com/bigmistqke/plasticinecms/blob/master/readme/validate.JPG?raw=true)
 
--   easily create and extend custom UI/schema-components
+##   easily create and extend custom UI/schema-components
 
 ![alt text](https://github.com/bigmistqke/plasticinecms/blob/master/readme/wrapper.JPG?raw=true)
 
