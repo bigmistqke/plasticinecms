@@ -19,12 +19,15 @@
 
 <p align="center">
   validate input</br>
+  <img src="https://github.com/bigmistqke/plasticinecms/blob/master/readme/validate-config2.JPG?raw=true" width="500"/></br>
   <img src="https://github.com/bigmistqke/plasticinecms/blob/master/readme/validate2.JPG?raw=true" width="500"/>
 </p>
 
 <p align="center">
   create and extend custom UI/schema-components</br>
-  <img src="https://github.com/bigmistqke/plasticinecms/blob/master/readme/wrapper2.JPG?raw=true" width="500"/>
+  <img src="https://github.com/bigmistqke/plasticinecms/blob/master/readme/wrapper2.JPG?raw=true" width="500"/></br>
+    <img src="https://github.com/bigmistqke/plasticinecms/blob/master/readme/wrapper-component.JPG?raw=true" width="500"/></br>
+  <img src="https://github.com/bigmistqke/plasticinecms/blob/master/readme/wrapper-interface2.JPG?raw=true" width="500"/></br>
 </p>
 
 <p align="center">
