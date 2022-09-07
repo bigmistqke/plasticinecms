@@ -14,11 +14,11 @@
 
 ![alt text](https://github.com/bigmistqke/plasticinecms/blob/master/readme/interface-filled.JPG?raw=true)
 
-##   easily validate input
+##   validate input
 
 ![alt text](https://github.com/bigmistqke/plasticinecms/blob/master/readme/validate.JPG?raw=true)
 
-##   easily create and extend custom UI/schema-components
+##   create and extend custom UI/schema-components
 
 ![alt text](https://github.com/bigmistqke/plasticinecms/blob/master/readme/wrapper.JPG?raw=true)
 
