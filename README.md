@@ -1,34 +1,14 @@
-## Usage
+(this is just a small experiment to learn typescript)
 
-Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.
+## plasticine: a flexible headless cms
 
-This is the reason you see a `pnpm-lock.yaml`. That being said, any package manager will work. This file can be safely be removed once you clone a template.
+write schemas as JSX-components
+![alt text](https://github.com/bigmistqke/plasticinecms/readme/master/config.jpg?raw=true)
 
-```bash
-$ npm install # or pnpm install or yarn install
-```
+generating UI
+![alt text](https://github.com/bigmistqke/plasticinecms/readme/master/interface.jpg?raw=true)
 
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
+easily create and extend custom UI/schema-components
+![alt text](https://github.com/bigmistqke/plasticinecms/readme/master/wraoper.jpg?raw=true)
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm dev` or `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-
-### `npm run build`
-
-Builds the app for production to the `dist` folder.<br>
-It correctly bundles Solid in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-## Deployment
-
-You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.)
+powered by [solid](https://www.solidjs.com/)
