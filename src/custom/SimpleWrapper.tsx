@@ -1,5 +1,5 @@
 import { register, Text } from '../plasticine'
-import { ConfigProps } from '../plasticine/components/types'
+import { ConfigProps } from '../plasticine/types'
 
 const SimpleWrapper = (props: ConfigProps) => {
 	return (

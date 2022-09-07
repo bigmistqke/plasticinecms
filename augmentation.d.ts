@@ -1,4 +1,4 @@
-import { ConfigProps } from './src/plasticine/components/types'
+import { ConfigProps } from './src/plasticine/types'
 
 declare module 'solid-js/jsx-runtime' {
 	namespace JSX {

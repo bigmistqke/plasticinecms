@@ -4,7 +4,7 @@ import { register } from '../plasticine'
 import uploadFile from '../plasticine/helpers/uploadFile'
 import { s_button, s_inactiveButton } from '../plasticine/components/styles'
 import { BsArrowRepeat, BsXLg } from 'solid-icons/bs'
-import { ProgressData } from '../plasticine/components/types'
+import { ProgressData } from '../plasticine/types'
 
 interface ThumbnailProps {
 	class: string

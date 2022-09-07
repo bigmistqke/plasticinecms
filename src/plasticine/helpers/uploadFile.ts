@@ -1,4 +1,4 @@
-import { ProgressData } from '../components/types'
+import { ProgressData } from '../types'
 
 const uploadFile = ({
 	file,

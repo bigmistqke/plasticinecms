@@ -1,6 +1,6 @@
 import { createEffect, createMemo } from 'solid-js'
 import { createStore } from 'solid-js/store'
-import { RegisteredFieldData } from '../components/types'
+import { RegisteredFieldData } from '../types'
 import fals from 'fals'
 
 const [store, setStore] = createStore<any>({})

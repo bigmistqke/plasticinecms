@@ -3,7 +3,7 @@ import { Dynamic } from 'solid-js/web'
 
 import { useStore } from '../store'
 
-import { RegisteredFieldData, TabData } from './types'
+import { RegisteredFieldData, TabData } from '../types'
 
 const Field: Component<{ data: RegisteredFieldData; tabData?: TabData; path: (string | number)[] }> = (props) => {
 	let { state, setState } = useStore(props)

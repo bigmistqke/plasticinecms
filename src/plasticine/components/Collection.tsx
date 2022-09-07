@@ -3,7 +3,7 @@ import { createStore } from 'solid-js/store'
 import { initStateSubCollection, useStore } from '../store'
 import Field from './Field'
 import { s_activeButton, s_button, s_header, s_inactiveButton, s_panel, s_title } from './styles'
-import { RegisteredFieldData } from './types'
+import { RegisteredFieldData } from '../types'
 
 const Collection: Component<{
 	path: string[]

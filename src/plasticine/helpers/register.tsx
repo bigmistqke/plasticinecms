@@ -1,7 +1,7 @@
 import { JSXElement } from 'solid-js'
 import { JSX } from 'solid-js/jsx-runtime'
 import { LabeledInputProps } from '../components/Inputs'
-import { ConfigProps } from '../components/types'
+import { ConfigProps } from '../types'
 
 const defaultValues = (key: string) => {
 	const valuePairs: { [key: string]: any } = {

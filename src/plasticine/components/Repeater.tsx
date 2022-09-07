@@ -5,7 +5,7 @@ import { initStateSubCollection, useStore } from '../store'
 import Field from './Field'
 import { s_smallTitle } from './styles'
 import Tabs from './Tabs'
-import { RegisteredFieldData, TabData } from './types'
+import { RegisteredFieldData, TabData } from '../types'
 
 const Repeater: Component<{
 	data: RegisteredFieldData
