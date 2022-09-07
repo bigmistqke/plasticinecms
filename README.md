@@ -14,4 +14,4 @@
 
 ![alt text](https://github.com/bigmistqke/plasticinecms/blob/master/readme/wrapper.JPG?raw=true)
 
-powered by [solid](https://www.solidjs.com/)
+powered by [solid](https://www.solidjs.com/) 🔥
