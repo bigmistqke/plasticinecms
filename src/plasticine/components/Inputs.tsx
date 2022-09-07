@@ -47,6 +47,7 @@ const Input: Component<LabeledInputProps> = (props) => {
 				onchange={props.onchange}
 				oninput={(e: { target: { value: any } }) => (props.oninput ? props.oninput(e.target.value) : null)}
 			/>
+			<ErrorMessage error={props.error} />
 		</ContainerWithLabel>
 	)
 }
