@@ -1,5 +1,3 @@
-(this is just a small experiment to learn typescript)
-
 # _plasticine_, a flexible headless cms
 
 <p align="center">
@@ -27,5 +25,6 @@
 </p>
 
 <p align="center">
-  🔥 powered by <a href="https://www.solidjs.com/">solid</a> and inspired heavily by <a href="https://payloadcms.com/">payloadcms</a> 🔥
+  🔥 powered by <a href="https://www.solidjs.com/">solid</a> and inspired heavily by <a href="https://payloadcms.com/">payloadcms</a> 🔥</br>
+  (this is mostly a small experiment to learn typescript)
 </p>
