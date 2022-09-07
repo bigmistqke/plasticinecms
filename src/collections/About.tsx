@@ -1,8 +1,5 @@
-import { JSX } from 'solid-js'
 import ComposedWrapper from '../custom/ComposedWrapper'
 import SimpleWrapper from '../custom/SimpleWrapper'
-import Upload from '../custom/Upload'
-import Uploads from '../custom/Uploads'
 import { Text, Config, Repeater, Textarea } from '../plasticine'
 
 export default (

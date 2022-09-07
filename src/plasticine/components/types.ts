@@ -30,4 +30,6 @@ export interface ConfigProps {
 	required?: boolean
 	placeholder?: string
 	children?: JSXElement
+	value?: any
+	error?: string | undefined
 }
