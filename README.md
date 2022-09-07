@@ -1,6 +1,6 @@
 (this is just a small experiment to learn typescript)
 
-## plasticine: a flexible headless cms
+# *plasticine*, a flexible headless cms 
 
 - write schemas as JSX-components
 
