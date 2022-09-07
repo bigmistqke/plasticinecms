@@ -2,24 +2,31 @@
 
 # _plasticine_, a flexible headless cms
 
-##   write schemas as JSX-components
+<p align="center">
+  write schemas as JSX-components</br>
+  <img src="https://github.com/bigmistqke/plasticinecms/blob/master/readme/config2.JPG?raw=true" width="500"/>
+</p>
 
-![alt text](https://github.com/bigmistqke/plasticinecms/blob/master/readme/config.JPG)
+<p align="center">
+  generating clean and minimal UI</br>
+  <img src="https://github.com/bigmistqke/plasticinecms/blob/master/readme/interface2.jpg?raw=true" width="500"/>
+</p>
 
-##   generating clean and minimal UI
+<p align="center">
+  for data to be entered</br>
+  <img src="https://github.com/bigmistqke/plasticinecms/blob/master/readme/interface-filled2.JPG?raw=true" width="500"/>
+</p>
 
-![alt text](https://github.com/bigmistqke/plasticinecms/blob/master/readme/interface.jpg?raw=true)
+<p align="center">
+  validate input</br>
+  <img src="https://github.com/bigmistqke/plasticinecms/blob/master/readme/validate2.JPG?raw=true" width="500"/>
+</p>
 
-##   for data to be entered
+<p align="center">
+  create and extend custom UI/schema-components</br>
+  <img src="https://github.com/bigmistqke/plasticinecms/blob/master/readme/wrapper2.JPG?raw=true" width="500"/>
+</p>
 
-![alt text](https://github.com/bigmistqke/plasticinecms/blob/master/readme/interface-filled.JPG?raw=true)
-
-##   validate input
-
-![alt text](https://github.com/bigmistqke/plasticinecms/blob/master/readme/validate.JPG?raw=true)
-
-##   create and extend custom UI/schema-components
-
-![alt text](https://github.com/bigmistqke/plasticinecms/blob/master/readme/wrapper.JPG?raw=true)
-
-powered by [solid](https://www.solidjs.com/) and inspired by [payloadcms](https://payloadcms.com/) 🔥
+<p align="center">
+  🔥 powered by <a href="https://www.solidjs.com/">solid</a> and inspired heavily by <a href="https://payloadcms.com/">payloadcms</a> 🔥
+</p>
