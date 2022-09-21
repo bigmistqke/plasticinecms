@@ -3,7 +3,7 @@ import { ConfigProps, CustomJSXElement } from '../types'
 
 const defaults = {
 	number: 0,
-	string: '',
+	string: 'test',
 	object: {},
 	repeater: [{}],
 	array: [],
@@ -26,17 +26,12 @@ export const register = <TValue>(
 		// this is the path it follows during the configuration
 		// we pass the component which will later be wrapped inside a Dynamic
 		// and pass any metadata concerning the
-		return Object.assign(
-			() => {
-				throw new Error('Cannot render directly')
-			},
-			{
-				returnType,
-				defaultValue: defaultValue || getDefaultsFromReturnType(returnType),
-				...props,
-				type: component,
-			}
-		)
+		return {
+			returnType,
+			defaultValue: defaultValue || getDefaultsFromReturnType(returnType),
+			...props,
+			type: component,
+		}
 	}
 }
 
