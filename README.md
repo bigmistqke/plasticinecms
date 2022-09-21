@@ -20,7 +20,7 @@
 <p align="center">
   create and extend custom UI/schema-components</br>
   <img src="https://github.com/bigmistqke/plasticinecms/blob/master/readme/wrapper2.JPG?raw=true" width="550"/></br>
-    <img src="https://github.com/bigmistqke/plasticinecms/blob/master/readme/wrapper-component.JPG?raw=true" width="550"/></br>
+    <img src="https://github.com/bigmistqke/plasticinecms/blob/master/readme/wrapper-component2.JPG?raw=true" width="550"/></br>
   <img src="https://github.com/bigmistqke/plasticinecms/blob/master/readme/wrapper-interface2.JPG?raw=true" width="550"/></br>
 </p>
 
