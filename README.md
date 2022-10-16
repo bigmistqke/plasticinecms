@@ -24,6 +24,15 @@
   <img src="https://github.com/bigmistqke/plasticinecms/blob/master/readme/wrapper-interface2.JPG?raw=true" width="550"/></br>
 </p>
 
+# TODO
+
+- [x] write cms-schema as JSX components
+- [x] extend interface and schema with custom JSX
+- [ ] type-generation from cms-schema
+- [ ] upload mechanism
+- [ ] database integration
+- [ ] ...
+
 <p align="center">
   🔥 powered by <a href="https://www.solidjs.com/">solid</a> and inspired heavily by <a href="https://payloadcms.com/">payloadcms</a> 🔥</br>
   (this is mostly a small experiment to learn typescript)
