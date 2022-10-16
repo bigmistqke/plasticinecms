@@ -28,9 +28,11 @@
 
 - [x] write cms-schema as JSX components
 - [x] extend interface and schema with custom JSX
+- [x] input validation
 - [ ] type-generation from cms-schema
 - [ ] upload mechanism
 - [ ] database integration
+- [ ] accounts / roles / authorization
 - [ ] ...
 
 <p align="center">
